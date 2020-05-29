@@ -1,0 +1,73 @@
+<style>
+div {
+  position: absolute;
+  background-color: #B9DEED;
+  font-family: Helvetica;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+form {
+  text-align: center;
+  margin: 35% auto 35% auto;
+
+}
+ul {
+  list-style: none;
+}
+.header {
+  font-weight: bold;
+  font-size: 20px
+}
+li {
+  margin: 10px auto auto auto;
+}
+.go {
+  width: 250px;
+}
+.name {
+  width: 250px;
+}
+</style>
+
+
+<div>
+
+  <form action="/birthday" method="post">
+    <ul>
+      <li class=header >
+        Hello there!
+      </li>
+      <li>
+        What's your name?
+      </li>
+      <li>
+        <input class=name type=text name=name>
+      </li>
+      <li>
+        When's your birthday?
+      </li>
+      <li>
+        Day: <input type=number name=day min=1 max=31>
+        Month: <select name=month>
+          <option value=1>January</option>
+          <option value=2>February</option>
+          <option value=3>March</option>
+          <option value=4>April</option>
+          <option value=5>May</option>
+          <option value=6>June</option>
+          <option value=7>July</option>
+          <option value=8>August</option>
+          <option value=9>September</option>
+          <option value=10>October</option>
+          <option value=11>November</option>
+          <option value=12>December</option>
+        </select>
+      </li>
+      <li>
+        <input class=go type=submit name=Go value=Go!>
+      </li>
+    </ul>
+  </form>
+</div>
